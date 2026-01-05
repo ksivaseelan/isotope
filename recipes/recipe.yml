@@ -3,7 +3,7 @@
 name: isotope
 description: Based on fedora atomic with Niri and the DankLinux Suite for a more DE-like experience
 base-image: ghcr.io/blue-build/base-images/fedora-base-nvidia
-image-version: 42
+image-version: latest
 
 modules:
   - type: os-release
@@ -45,33 +45,33 @@ modules:
         - quickshell-git
         - dms
         - dms-greeter
-        # Gnome replacements for what's missing
-        - xdg-desktop-portal-gnome
-        - polkit-gnome
-        - gnome-keyring
-        # Terminal tools
-        - ghostty
-        - fish
-        - lazygit
-        - bat
-        - fzf
-        - starship
-        - ripgrep
-        - ncdu
-        - entr
-        - eza
-        - fastfetch
-        - fd-find
-        - neovim
-        - gh
-        - hyperfine
-        - jq
-        - zoxide
-        - podman-compose
-        - jujutsu
-        - yazi
-        # other tools
-        - zen-browser
+        # # Gnome replacements for what's missing
+        # - xdg-desktop-portal-gnome
+        # - polkit-gnome
+        # - gnome-keyring
+        # # Terminal tools
+        # - ghostty
+        # - fish
+        # - lazygit
+        # - bat
+        # - fzf
+        # - starship
+        # - ripgrep
+        # - ncdu
+        # - entr
+        # - eza
+        # - fastfetch
+        # - fd-find
+        # - neovim
+        # - gh
+        # - hyperfine
+        # - jq
+        # - zoxide
+        # - podman-compose
+        # - jujutsu
+        # - yazi
+        # # other tools
+        # - zen-browser
     remove:
       auto-remove: true
       packages:
