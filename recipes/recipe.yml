@@ -3,7 +3,7 @@
 name: isotope
 description: Based on fedora atomic with Niri and the DankLinux Suite for a more DE-like experience
 base-image: ghcr.io/blue-build/base-images/fedora-base-nvidia
-image-version: latest
+image-version: 42
 
 modules:
   - type: os-release
