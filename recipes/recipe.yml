@@ -9,6 +9,7 @@ modules:
   - type: os-release
     properties:
       ID: isotope
+      ID_LIKE: fedora
       NAME: Isotope Linux
       PRETTY_NAME: Isotope Linux Image
       DEFAULT_HOSTNAME: isotope
