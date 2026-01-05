@@ -32,6 +32,7 @@ modules:
         - avengemedia/danklinux
         - lihaohong/yazi
         - alternateved/eza
+        - alternateved/niri
         - atim/starship
         - dejan/rpms
         - peterwu/rendezvous
@@ -42,7 +43,7 @@ modules:
     install:
       packages:
         # Desktop tools
-        - niri-git
+        - niri
         - quickshell-git
         - dms
         - dms-greeter
@@ -78,11 +79,7 @@ modules:
       packages:
         - firefox
         - firefox-langpacks
-        - gnome-disk-utility
-        - gnome-system-monitor
-        - ark
         - htop
-        - vim
         - nvtop
         - toolbox
 
