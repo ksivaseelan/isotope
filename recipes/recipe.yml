@@ -38,7 +38,7 @@ modules:
         - sneexy/zen-browser
         - dejan/lazygit
         - scottames/ghostty
-        - aldantaneo/jj-vcs
+        - aldantanneo/jj-vcs
     install:
       packages:
         # Desktop tools
