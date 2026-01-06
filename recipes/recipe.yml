@@ -13,10 +13,12 @@ modules:
       NAME: Isotope Linux
       PRETTY_NAME: Isotope Linux Image
       DEFAULT_HOSTNAME: isotope
+
   - type: files
     files:
       - source: system
         destination: /
+
   - type: systemd
     system:
       masked:
@@ -30,50 +32,31 @@ modules:
       copr:
         - avengemedia/dms-git
         - avengemedia/danklinux
-        - lihaohong/yazi
-        - alternateved/eza
-        - alternateved/niri
-        - atim/starship
-        - dejan/rpms
-        - peterwu/rendezvous
-        - sneexy/zen-browser
-        - dejan/lazygit
         - scottames/ghostty
-        - aldantanneo/jj-vcs
     install:
       packages:
-        # Desktop tools
+        # Scrolling wayland compositor
         - niri
+        # run x11 apps in wayland
+        - xwayland-satellite
+        # toolkit used by dms
         - quickshell-git
+        # DE-like for niri
         - dms
+        # Matching login screen
         - dms-greeter
-        # Gnome replacements for what's missing
+        # File chooser
         - xdg-desktop-portal-gnome
-        - polkit-gnome
+        # handle secrets and passwords
         - gnome-keyring
-        # Terminal tools
+        # handles elvating privileges with password
+        - polkit-gnome
+        # Terminal
         - ghostty
-        - fish
-        - lazygit
-        - bat
-        - fzf
-        - starship
-        - ripgrep
-        - ncdu
-        - entr
-        - eza
-        - fastfetch
-        - fd-find
+        # TUI file editor and IDE
         - neovim
-        - gh
-        - hyperfine
-        - jq
-        - zoxide
-        - podman-compose
-        - jj-cli
-        - yazi
-        # other tools
-        - zen-browser
+        # manage containers
+        - distrobox
     remove:
       auto-remove: true
       packages:
@@ -83,13 +66,26 @@ modules:
         - nvtop
         - toolbox
 
+  - type: soar
+    additional-repos: true
+    auto-upgrade: true
+    upgrade-interval: "3h"
+
+  - type: script
+    scripts:
+      - install-soar-pkgs.sh
+
   - type: default-flatpaks
     configurations:
-      - notify: true
-        scope: user
+      - notify: false
+        scope: system
         repo:
           name: flathub
           title: Flathub
+          install:
+            - com.github.tchx84.Flatseal
+            - app.zen_browser.zen
+            - dev.zed.Zed
 
   - type: initramfs
 
