@@ -50,7 +50,7 @@ modules:
         # handle secrets and passwords
         - gnome-keyring
         # handles elvating privileges with password
-        - polkit-gnome
+        - mate-polkit
         # Terminal
         - ghostty
         # TUI file editor and IDE
