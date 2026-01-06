@@ -47,33 +47,33 @@ modules:
         - quickshell-git
         - dms
         - dms-greeter
-        # # Gnome replacements for what's missing
-        # - xdg-desktop-portal-gnome
-        # - polkit-gnome
-        # - gnome-keyring
-        # # Terminal tools
-        # - ghostty
-        # - fish
-        # - lazygit
-        # - bat
-        # - fzf
-        # - starship
-        # - ripgrep
-        # - ncdu
-        # - entr
-        # - eza
-        # - fastfetch
-        # - fd-find
-        # - neovim
-        # - gh
-        # - hyperfine
-        # - jq
-        # - zoxide
-        # - podman-compose
-        # - jj-cli
-        # - yazi
-        # # other tools
-        # - zen-browser
+        # Gnome replacements for what's missing
+        - xdg-desktop-portal-gnome
+        - polkit-gnome
+        - gnome-keyring
+        # Terminal tools
+        - ghostty
+        - fish
+        - lazygit
+        - bat
+        - fzf
+        - starship
+        - ripgrep
+        - ncdu
+        - entr
+        - eza
+        - fastfetch
+        - fd-find
+        - neovim
+        - gh
+        - hyperfine
+        - jq
+        - zoxide
+        - podman-compose
+        - jj-cli
+        - yazi
+        # other tools
+        - zen-browser
     remove:
       auto-remove: true
       packages:
